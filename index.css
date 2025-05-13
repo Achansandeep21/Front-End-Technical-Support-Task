@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.bundle-section {
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.bundle-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #129A74;
+    padding: 10px;
+}
+
+.option {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.option.active {
+    border-color: #129A74;
+    background-color: #f6fffa;
+    height: 130px;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.option .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option .most-popular {
+    color: #129A74;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.expanded-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.option.active .expanded-content {
+    display: block;
+}
+
+select {
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.footer-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+.footer {
+    color: #129A74;
+    font-size: 14px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-cart-btn {
+    background-color: #129A74;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.bundle-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.bundle-divider::before,
+.bundle-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.bundle-divider:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.bundle-divider:not(:empty)::after {
+    margin-left: .75em;
+}
+
+.powered-by {
+    text-align: right;
+    font-size: 10px;
+    color: #888;
+    margin-top: 5px;
+    padding: 0 10px 10px;
+}
